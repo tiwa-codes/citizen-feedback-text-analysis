@@ -1,0 +1,48 @@
+# Analysis Configuration
+random_seed: 42
+
+# Topic Modeling
+n_topics: 10
+topic_method: 'lda'  # 'lda' or 'nmf'
+n_iterations: 1000
+passes: 10
+
+# TF-IDF Features
+min_df: 5
+max_df: 0.95
+n_features_tfidf: 20000
+ngram_range: [1, 2]
+
+# Sentiment Analysis
+sentiment_lexicon_path: ""  # Empty - lexicon embedded in code
+
+# Example Topic Labels (can be manually edited after initial modeling)
+example_topic_labels:
+  0: "Health Services"
+  1: "Education"
+  2: "Water Supply"
+  3: "Infrastructure"
+  4: "Staff Attitude"
+  5: "Wait Times"
+  6: "Fees & Corruption"
+  7: "Medicine Stockouts"
+  8: "Local Government"
+  9: "Praise & Thanks"
+
+# Data Generation
+synthetic_data_n: 50000
+synthetic_data_months: 24
+start_date: "2024-01-01"
+
+# Text Cleaning
+min_word_count: 2
+max_word_count: 500
+remove_urls: true
+remove_emails: true
+remove_phone_numbers: true
+mask_pii: true
+
+# Visualization
+plot_format: 'png'
+plot_dpi: 300
+top_n_keywords: 20
