@@ -1,0 +1,37 @@
+{
+  "generated_at": "2024-11-06T17:00:00Z",
+  "dataset": {
+    "total_records": 50000,
+    "date_range": {
+      "start": "2024-01-01",
+      "end": "2025-12-31"
+    },
+    "states": 37,
+    "channels": 5
+  },
+  "text_statistics": {
+    "avg_word_count": 28.5,
+    "avg_char_count": 156.3,
+    "lexical_diversity": 0.67
+  },
+  "sentiment": {
+    "positive": 0.25,
+    "neutral": 0.30,
+    "negative": 0.45
+  },
+  "topics": {
+    "n_topics": 10,
+    "method": "lda",
+    "top_topics": [
+      "Health Access",
+      "Infrastructure",
+      "Water Supply",
+      "Fees & Corruption",
+      "Staff Attitude"
+    ]
+  },
+  "response_metrics": {
+    "avg_response_time_days": 12.3,
+    "resolution_rate": 0.40
+  }
+}
