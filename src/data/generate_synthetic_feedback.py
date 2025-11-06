@@ -103,10 +103,10 @@ def generate_single_feedback(
         # Slight variation for near-duplicate
         if random.random() < 0.5:
             text = text.replace(".", "...").replace("Please", "Pls")
-        theme = duplicate_source['theme']
+        theme = duplicate_source.get('theme', 'info_request')
         state = duplicate_source['state']
         lga = duplicate_source['lga']
-        facility = duplicate_source['facility']
+        facility = duplicate_source.get('facility_or_service', duplicate_source.get('facility', random.choice(FACILITIES_SERVICES)))
     else:
         # Generate new feedback
         # Weight towards complaints vs praise

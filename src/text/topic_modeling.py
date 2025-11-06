@@ -207,7 +207,9 @@ def fit_sklearn_lda(
     texts: List[str],
     n_topics: int = 10,
     max_features: int = 5000,
-    random_state: int = 42
+    random_state: int = 42,
+    min_df: int = None,
+    max_df: float = None
 ) -> Tuple[Any, np.ndarray, List[str], CountVectorizer]:
     """
     Fit LDA topic model using sklearn.
@@ -217,6 +219,8 @@ def fit_sklearn_lda(
         n_topics: Number of topics
         max_features: Maximum vocabulary size
         random_state: Random seed
+        min_df: Minimum document frequency (optional)
+        max_df: Maximum document frequency (optional)
         
     Returns:
         Tuple of (model, doc_topic_matrix, feature_names, vectorizer)
@@ -226,11 +230,15 @@ def fit_sklearn_lda(
     config = load_config()
     stop_words = list(get_stopwords())
     
+    # Use provided values or fall back to config
+    min_df = min_df if min_df is not None else config.get('min_df', 5)
+    max_df = max_df if max_df is not None else config.get('max_df', 0.95)
+    
     # Create count vectorizer for LDA
     vectorizer = CountVectorizer(
         max_features=max_features,
-        min_df=config.get('min_df', 5),
-        max_df=config.get('max_df', 0.95),
+        min_df=min_df,
+        max_df=max_df,
         stop_words=stop_words,
         ngram_range=(1, 1)
     )

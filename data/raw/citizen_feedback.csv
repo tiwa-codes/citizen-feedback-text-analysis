@@ -1,0 +1,101 @@
+feedback_id,created_at,state,lga,channel,facility_or_service,raw_text,rating,response_time_days,resolved,assigned_dept
+FB000001,2025-12-19,Kaduna,Kaduna South,SMS,Clinic,"Please, the clinic building is in poor condition. leaking roof and broken windows.",,25,True,Health
+FB000002,2024-12-18,Kaduna,Kaduna North,In-person,Secondary School,Water supply at Secondary School is not functional. Toilets are dirty. Other wards have same problem.,4,6,True,Education
+FB000003,2024-08-21,Oyo,Oyo West,SMS,Ward Office,The Ward Office opens very late. Many people wait hours before services start.,,,False,LocalGov
+FB000004,2025-10-12,Gombe,Gombe Central,Hotline,Town Hall,"Oga, staff demanding money at town hall before providing service. this is wrong.",,,False,LocalGov
+FB000005,2024-02-02,Ebonyi,Ebonyi East,Hotline,Fire Service,No electricity at Fire Service. Generator not working for weeks.,,,False,Other
+FB000006,2024-09-09,Bauchi,Bauchi North,Social Media,Motor Park,What documents are needed for Motor Park? plss advise.,1,,False,Other
+FB000007,2024-06-12,Ondo,Ondo West,Hotline,Adult Education Center,How can I access services at Adult Education Center? Need guidance. This has been happening for months.,,,False,Education
+FB000008,2024-10-27,Bauchi,Bauchi East,Hotline,Town Hall,No medicine available at Town Hall. Always telling us to buy from pharmacy. This is affecting many people in the community.,1,,False,LocalGov
+FB000009,2025-06-27,Jigawa,Jigawa West,In-person,Waste Management,What documents are needed for Waste Management? Please advise. Other wards have same problem.,2,,False,Sanitation
+FB000010,2025-06-29,Rivers,Port Harcourt,SMS,Local Council,What documents are needed for Local Council? plz advise.,,7,True,LocalGov
+FB000011,2025-11-18,Plateau,Plateau West,SMS,Waste Management,I want to know the operating hours of Waste Management.,1,,False,Sanitation
+FB000012,2024-12-04,Taraba,Taraba East,SMS,Adult Education Center,"Abeg, the adult education center in taraba east is always closed when we arrive. no staff present.",,6,True,Education
+FB000013,2024-12-28,Rivers,Obio-Akpor,Web Form,Motor Park,Too many charges at Motor Park. Corruption everywhere.,3,7,True,Other
+FB000014,2024-09-12,Anambra,Anambra Municipal,In-person,Fire Service,"Madam, no proper access to fire service. the road is bad and the gate is locked most times.",1,,False,Other
+FB000015,2024-06-17,Zamfara,Zamfara Central,SMS,Market,Thank you to the staff at Market. They provided excellent service. Please help us urgently.,4,,False,Other
+FB000016,2025-06-27,Jigawa,Jigawa East,Hotline,Market,"Madam, teh market needs renovation. equipment is old and broken. Other wards have same problem.",,21,True,Other
+FB000017,2024-02-10,Bayelsa,Bayelsa North,SMS,Maternity Ward,No electricity at Maternity Ward. Generator not working for weeks.,,,False,Health
+FB000018,2025-09-28,FCT Abuja,Kwali,Hotline,Water Supply,"Oga, staff members are not helpful at water supply. they ignore our questions.",1,,False,Water
+FB000019,2025-10-31,Bauchi,Bauchi West,SMS,Water Supply,The Water Supply opens very late. Many people wait hours before services start. This is affecting many people in the community.,4,,False,Water
+FB000020,2024-10-15,Zamfara,Zamfara South,Social Media,Clinic,How can I access services at Clinic? Need guidance.,1,,False,Health
+FB000021,2024-12-07,Enugu,Enugu Municipal,Web Form,Water Supply,"The Water Supply has no supplies. No syringes, no bandages, nothing. Please help us urgently.",1,,False,Water
+FB000022,2024-05-31,Jigawa,Jigawa North,In-person,Market,the Market building is in poor condition. Leaking roof and broken windows.,2,,False,Other
+FB000023,2024-08-30,Lagos,Ikeja,Social Media,Education Office,The Education Office building is in poor condition. Leaking roof and broken windows.,3,,False,Education
+FB000024,2024-08-15,Edo,Edo East,SMS,Water Treatment Plant,I appreciate the quick service at Water Treatment Plant. Keep up the good work. This has been happening for months.,,20,True,Water
+FB000025,2025-07-03,Kwara,Kwara South,Social Media,Adult Education Center,The workers at Adult Education Center treat us badly. Very poor customer service. Other wards have same problem.,4,11,True,Education
+FB000026,2024-09-17,Jigawa,Jigawa North,Web Form,Water Supply,No proper access to Water Supply. The road is bad and the gate is locked most times.,5,4,True,Water
+FB000027,2024-11-03,Taraba,Taraba West,In-person,Road Maintenance,Rude behavior from staff at the Road Maintenance. We deserve better treatment.,1,,False,Other
+FB000028,2024-11-07,Kebbi,Kebbi East,In-person,Market,No proper access to Market. The road is bad and the gate is locked most times. This is affecting many people in the community.,4,1,True,Other
+FB000029,2025-11-10,Kebbi,Kebbi East,Hotline,Road Maintenance,Rude behavior from staff at the Road Maintenance. We deserve better treatment.,,,False,Other
+FB000030,2025-12-14,Imo,Imo Municipal,Hotline,Education Office,teh Education Office in Imo Municipal is always closed when we arrive. No staff present.,2,,False,Education
+FB000031,2024-05-16,Delta,Delta Municipal,In-person,Clinic,the workers at Clinic were very helpful and professional. Well done! We have complained before but nothing changed.,1,,False,Health
+FB000032,2024-09-22,Zamfara,Zamfara West,Hotline,Town Hall,Hidden fees at Town Hall. They ask for money for everything.,2,,False,LocalGov
+FB000033,2024-06-03,Kaduna,Chikun,Web Form,Adult Education Center,Staff at Adult Education Center are very rude. They shout at patients and show no respect. Other wards have same problem.,4,3,True,Education
+FB000034,2025-08-12,Enugu,Enugu Central,Hotline,Water Treatment Plant,Hidden fees at Water Treatment Plant. They ask for money for everything.,1,,False,Water
+FB000035,2024-06-18,Kwara,Kwara South,In-person,LGA Secretariat,click here for free money!!!,4,7,True,LocalGov
+FB000036,2025-01-23,Yobe,Yobe Central,Social Media,Motor Park,"Abeg, they are charging illegal fees at motor park. this service shd be free. Other wards have same problem.",4,13,True,Other
+FB000037,2024-02-01,Ogun,Ogun South,Social Media,Sanitation Department,The Sanitation Department in Ogun South is always closed when we arrive. No staff present.,2,,False,Sanitation
+FB000038,2025-09-13,Adamawa,Adamawa West,SMS,Public School,No medicine available at Public School. Always telling us to buy from pharmacy. Other wards have same problem.,,,False,Education
+FB000039,2024-05-03,Ebonyi,Ebonyi South,SMS,Primary Health Center,I want to know the operating hours of Primary Health Center. We have complained before but nothing changed.,5,24,True,Health
+FB000040,2024-06-05,Akwa Ibom,Akwa Ibom South,Web Form,Road Maintenance,"Sir, we wait for many hours at road maintenance. process is too slow. Other wards have same problem.",3,,False,Other
+FB000041,2025-04-06,Kaduna,Chikun,Social Media,Market,I appreciate the quick service at Market. Keep up the good work.,1,,False,Other
+FB000042,2024-01-11,Nasarawa,Nasarawa South,SMS,Water Treatment Plant,The workers at Water Treatment Plant treat us badly. Very poor customer service. This is affecting many people in the community.,,,False,Water
+FB000043,2024-09-06,Imo,Imo Municipal,Hotline,Market,The Market needs renovation. Equipment is old and broken.,,27,True,Other
+FB000044,2024-05-02,Plateau,Plateau West,Web Form,LGA Secretariat,What documents are needed for LGA Secretariat? Please advise.,5,6,True,LocalGov
+FB000045,2024-01-15,Edo,Edo North,SMS,Sanitation Department,Staff members are not helpful at Sanitation Department. They ignore our questions.,,14,True,Sanitation
+FB000046,2024-02-22,Akwa Ibom,Akwa Ibom Central,Web Form,Public School,"Oga, hidden fees at public school. they ask for money for everything.",1,,False,Education
+FB000047,2025-09-25,Borno,Borno Central,Hotline,Maternity Ward,They are charging illegal fees at Maternity Ward. This service should be free. We have complained before but nothing changed.,5,30,True,Health
+FB000048,2024-03-24,Osun,Osun East,Hotline,Motor Park,What documents are needed for Motor Park? Please advise. We have complained before but nothing changed.,,,False,Other
+FB000049,2025-10-02,Bauchi,Bauchi North,SMS,Town Hall,d Town Hall needs renovation. Equipment is old and broken. Please help us urgently.,,13,True,LocalGov
+FB000050,2025-08-05,Ekiti,Ekiti East,SMS,Adult Education Center,Water supply at Adult Education Center is not functional. Toilets are dirty. We have complained before but nothing changed.,,,False,Education
+FB000051,2024-08-22,Oyo,Oyo Municipal,Hotline,Ward Office,I want to know the operating hours of Ward Office.,1,,False,LocalGov
+FB000052,2025-10-12,FCT Abuja,Kwali,Social Media,Road Maintenance,Thank you to the staff at Road Maintenance. They provided excellent service.,5,7,True,Other
+FB000053,2024-02-07,Plateau,Plateau South,Hotline,Water Treatment Plant,No electricity at Water Treatment Plant. Generator not working for weeks.,5,22,True,Water
+FB000054,2025-05-25,Kebbi,Kebbi Central,Social Media,Ward Office,Please I need information about registration at Ward Office.,4,13,True,LocalGov
+FB000055,2024-04-05,Enugu,Enugu South,Web Form,Borehole,Medicine shortage at Borehole. We need government to supply drugs. We have complained before but nothing changed.,3,7,True,Water
+FB000056,2025-07-18,Borno,Borno East,Social Media,Fire Service,I appreciate the quick service at Fire Service. Keep up the good work.,1,,False,Other
+FB000057,2025-08-16,Sokoto,Sokoto Municipal,Social Media,Maternity Ward,Rude behavior from staff at the Maternity Ward. We deserve better treatment. This has been happening for months.,4,10,True,Health
+FB000058,2025-02-24,Delta,Delta East,Web Form,Local Council,The wait time at Local Council is unbearable. Need faster service. We have complained before but nothing changed.,1,,False,LocalGov
+FB000059,2025-06-22,Nasarawa,Nasarawa East,Social Media,Fire Service,I want to know the operating hours of Fire Service.,5,2,True,Other
+FB000060,2025-01-24,Delta,Delta East,Social Media,Public School,xxxxxxxxxx yyyyyyy zzzzz,3,,False,Education
+FB000061,2025-10-10,Rivers,Oyigbo,SMS,Maternity Ward,Staff members are not helpful at Maternity Ward. They ignore our questions.,,,False,Health
+FB000062,2024-03-21,Ebonyi,Ebonyi Municipal,Hotline,Primary Health Center,teh Primary Health Center in Ebonyi Municipal is always closed when we arrive. No staff present. Please help us urgently.,1,,False,Health
+FB000063,2024-10-21,Imo,Imo East,Social Media,Public School,Staff members are not helpful at Public School. They ignore our questions.,2,,False,Education
+FB000064,2025-05-09,Osun,Osun South,Social Media,Borehole,Hidden fees at Borehole. They ask for money for everything.,5,14,True,Water
+FB000065,2024-10-20,Kwara,Kwara West,Hotline,Borehole,No proper access to Borehole. the road is bad and the gate is locked most times.,3,,False,Water
+FB000066,2025-01-08,Kwara,Kwara North,Web Form,Police Station,The workers at Police Station treat us badly. Very poor customer service.,4,10,True,Other
+FB000067,2025-05-08,Kano,Dala,In-person,Secondary School,Staff members are not helpful at Secondary School. They ignore our questions.,1,,False,Education
+FB000068,2025-02-08,Kogi,Kogi Central,Web Form,Maternity Ward,We traveled far to reach the Maternity Ward but it was locked. Please improve access.,1,,False,Health
+FB000069,2024-04-20,Jigawa,Jigawa East,In-person,Market,"Madam, teh market needs renovation... equipment is old and broken... Other wards have same problem...",4,,False,Other
+FB000070,2025-05-19,Zamfara,Zamfara South,Social Media,Adult Education Center,The Adult Education Center needs renovation. Equipment is old and broken.,5,5,True,Education
+FB000071,2024-10-13,Yobe,Yobe North,Hotline,Local Council,The Local Council needs renovation. Equipment is old and broken.,2,,False,LocalGov
+FB000072,2025-10-22,Bauchi,Bauchi North,Hotline,Town Hall,d Town Hall needs renovation. Equipment is old and broken. Please help us urgently.,,,False,LocalGov
+FB000073,2025-07-21,Ekiti,Ekiti Central,Social Media,Town Hall,We traveled far to reach the Town Hall but it was locked. Please improve access. We have complained before but nothing changed.,1,,False,LocalGov
+FB000074,2025-08-25,Gombe,Gombe South,In-person,Police Station,We traveled far to reach the Police Station but it was locked. Please improve access. This has been happening for months.,4,4,True,Other
+FB000075,2024-02-14,Anambra,Anambra North,In-person,Waste Management,The Waste Management in Anambra North is always closed when we arrive. No staff present.,4,10,True,Sanitation
+FB000076,2024-05-31,Taraba,Taraba South,Web Form,Primary Health Center,No proper access to Primary Health Center. The road is bad and the gate is locked most times.,1,,False,Health
+FB000077,2024-08-08,Zamfara,Zamfara Municipal,Hotline,Police Station,Medicine shortage at Police Station. We need government to supply drugs.,5,22,True,Other
+FB000078,2025-04-30,Ogun,Ogun South,Social Media,Ward Office,Waiting time at Ward Office is too long. Spent 5 hours just to register.,5,11,True,LocalGov
+FB000079,2025-03-09,Bayelsa,Bayelsa East,SMS,Local Council,Thank you to the staff at Local Council. They provided excellent service.,,26,True,LocalGov
+FB000080,2024-10-12,Kano,Fagge,Hotline,Clinic,"Abeg, too many charges at clinic. corruption everywhere.",,,False,Health
+FB000081,2025-08-02,Zamfara,Zamfara West,Web Form,Fire Service,"Oga, staff demanding money at fire service before providing service. this is wrong.",3,3,True,Other
+FB000082,2024-03-27,Adamawa,Adamawa Central,In-person,Education Office,The wait time at Education Office is unbearable. Need faster service.,2,,False,Education
+FB000083,2025-11-25,Anambra,Anambra Municipal,SMS,Town Hall,The Town Hall needs renovation. Equipment is old and broken. This is affecting many people in the community.,,14,True,LocalGov
+FB000084,2025-06-29,Katsina,Katsina Central,SMS,Police Station,We traveled far to reach the Police Station but it was locked. plz improve access. This has been happening for months.,3,17,True,Other
+FB000085,2024-04-27,Kwara,Kwara Central,Hotline,General Hospital,Medicine shortage at General Hospital. We need government to supply drugs.,2,,False,Health
+FB000086,2024-06-21,Ebonyi,Ebonyi West,Web Form,Local Council,the Local Council in Ebonyi West is always closed when we arrive. No staff present. Other wards have same problem.,1,,False,LocalGov
+FB000087,2025-10-05,Taraba,Taraba West,SMS,Local Council,"Please, very long queues at local council. no proper queue management system. We have complained before but nothing changed.",1,,False,LocalGov
+FB000088,2025-10-08,Osun,Osun Municipal,Social Media,Motor Park,Water supply at Motor Park is not functional. Toilets are dirty.,3,8,True,Other
+FB000089,2025-04-18,Anambra,Anambra South,Web Form,Borehole,No medicine available at Borehole. Always telling us to buy from pharmacy. This has been happening for months.,2,,False,Water
+FB000090,2024-12-17,Akwa Ibom,Akwa Ibom East,Social Media,Motor Park,Water supply at Motor Park is not functional. Toilets are dirty.,2,,False,Other
+FB000091,2025-10-08,Edo,Edo Central,SMS,Town Hall,How can I access services at Town Hall? Need guidance.,5,6,True,LocalGov
+FB000092,2024-05-12,Benue,Benue West,In-person,Borehole,The workers at Borehole treat us badly. Very poor customer service. Other wards have same problem.,5,7,True,Water
+FB000093,2024-12-15,Katsina,Katsina West,Hotline,Water Treatment Plant,Thank you to the staff at Water Treatment Plant. They provided excellent service.,,11,True,Water
+FB000094,2025-09-24,Gombe,Gombe North,SMS,Borehole,Thank you to the staff at Borehole. They provided excellent service.,3,,False,Water
+FB000095,2025-04-04,Ebonyi,Ebonyi North,Social Media,Police Station,"Please, the workers at police station were very helpful and professional. well done!",3,,False,Other
+FB000096,2024-07-23,Plateau,Plateau North,Hotline,Motor Park,I want to know the operating hours of Motor Park.,,,False,Other
+FB000097,2025-06-09,Jigawa,Jigawa Central,Web Form,Local Council,They are charging illegal fees at Local Council. This service should be free. This has been happening for months.,1,,False,LocalGov
+FB000098,2025-10-27,Gombe,Gombe East,Social Media,Primary Health Center,The wait time at Primary Health Center is unbearable. Need faster service.,5,14,True,Health
+FB000099,2024-01-20,Akwa Ibom,Akwa Ibom South,Social Media,Sanitation Department,No electricity at Sanitation Department. Generator not working for weeks.,4,,False,Sanitation
+FB000100,2025-09-03,Zamfara,Zamfara Municipal,Web Form,LGA Secretariat,d LGA Secretariat opens very late. Many peple wait hours before services start.,5,8,True,LocalGov
