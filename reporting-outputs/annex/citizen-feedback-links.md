@@ -1,0 +1,224 @@
+# Citizen Feedback Analysis: Data & Code References
+
+This annex provides links to raw data, processed outputs, analysis notebooks, and source code for the citizen feedback donor report.
+
+---
+
+## Data Files
+
+### Raw Data
+- **Location:** `data/raw/citizen_feedback.csv`
+- **Description:** Original feedback entries with raw text, metadata, and channel information
+- **Records:** 100 entries
+- **Date Range:** January 2024 – December 2025
+- **Fields:** feedback_id, created_at, state, lga, channel, facility_or_service, raw_text, rating, response_time_days, resolved, assigned_dept
+
+### Processed Data
+- **Location:** `data/processed/citizen_feedback_clean.parquet`
+- **Description:** Cleaned text with PII masking, word counts, and text features
+- **Format:** Parquet (compressed columnar format)
+- **Additional Fields:** cleaned_text, word_count, char_count, has_url, has_number, contains_expletive
+
+### Sentiment Analysis Results
+- **Location:** `data/processed/citizen_feedback_with_sentiment.parquet`
+- **Description:** Cleaned data with sentiment scores and labels
+- **Sentiment Fields:** sentiment_score (-1 to 1), sentiment_label (positive/neutral/negative), sentiment_confidence, polarity_score
+
+### Topic Modeling Results
+- **Location:** `data/processed/topic_assignments.csv`
+- **Description:** Dominant topic assignment and topic probabilities for each feedback entry
+- **Topic Fields:** dominant_topic, topic_0_prob, topic_1_prob, topic_2_prob, topic_3_prob, topic_4_prob
+- **Method:** Latent Dirichlet Allocation (LDA) with 5 topics
+
+### Summary Metrics
+- **Location:** `reports/summary_metrics.json`
+- **Description:** Aggregated statistics including sentiment distribution, top topics, and response metrics
+- **Format:** JSON (structured metadata)
+
+---
+
+## Analysis Notebooks
+
+### Exploratory Data Analysis
+- **Location:** `notebooks/01_citizen_feedback_eda.ipynb`
+- **Description:** Comprehensive Jupyter notebook with data exploration, visualizations, sentiment analysis, and topic modeling
+- **Contents:**
+  - Data generation and loading
+  - Text cleaning demonstrations
+  - Channel, state, and department distributions
+  - Message length analysis
+  - Sentiment trends over time
+  - Topic modeling with representative examples
+  - Interactive visualizations
+
+**To Run:**
+```bash
+jupyter lab notebooks/01_citizen_feedback_eda.ipynb
+```
+
+---
+
+## Source Code
+
+### Data Generation
+- **Location:** `src/data/generate_synthetic_feedback.py`
+- **Description:** Script to generate synthetic citizen feedback data with realistic patterns
+- **Usage:** `python -m src.data.generate_synthetic_feedback --n 50000 --months 24`
+
+### Text Cleaning
+- **Location:** `src/text/cleaning.py`
+- **Description:** Text preprocessing including PII masking, normalization, and feature extraction
+- **Usage:** `python -m src.text.cleaning --input data/raw/citizen_feedback.csv --output data/processed/citizen_feedback_clean.parquet`
+
+### Sentiment Analysis
+- **Location:** `src/text/sentiment.py`
+- **Description:** Rule-based sentiment analysis with lexicon scoring and negation handling
+- **Usage:** `python -m src.text.sentiment`
+- **Output:** Sentiment scores, labels, and summary statistics by channel and state
+
+### Topic Modeling
+- **Location:** `src/text/topic_modeling.py`
+- **Description:** LDA and NMF topic modeling with representative document extraction
+- **Usage:** `python -m src.text.topic_modeling --method lda --n-topics 5`
+- **Output:** Topic assignments, top terms per topic, and coherence metrics
+
+### Visualization
+- **Location:** `src/viz/plots.py`
+- **Description:** Plotting functions for distributions, trends, and topic visualizations
+- **Functions:** plot_channel_distribution, plot_state_distribution, plot_sentiment_trends, plot_topic_heatmap
+
+### Command-Line Interface
+- **Location:** `src/cli.py`
+- **Description:** Unified CLI for running the full pipeline or individual steps
+- **Usage:** `python -m src.cli run-pipeline`
+
+---
+
+## Documentation
+
+### Data Dictionary
+- **Location:** `docs/data_dictionary.md`
+- **Description:** Complete field descriptions, data types, and allowed values for all dataset columns
+
+### Ethics Guidelines
+- **Location:** `docs/ethics_guidelines.md`
+- **Description:** Privacy considerations, bias awareness, and responsible interpretation practices
+
+### Modeling Notes
+- **Location:** `docs/modeling_notes.md`
+- **Description:** Technical methodology, parameters, algorithms, and known limitations
+
+### Policy Brief
+- **Location:** `reports/citizen_feedback_brief.md`
+- **Description:** Detailed policy brief with extended analysis, appendices, and state-level metrics
+
+---
+
+## Visualizations
+
+### Dashboard
+- **Location:** `reporting-outputs/figures/citizen-feedback-dashboard.png`
+- **Description:** One-slide visual dashboard with KPIs, sentiment distribution, and top topics
+- **Dimensions:** 1200 x 675 pixels
+- **Format:** PNG
+
+### Other Figures
+- **Location:** `reports/figures/` (if generated by notebooks)
+- **Types:** Channel distributions, sentiment trends, topic heatmaps, word clouds
+
+---
+
+## Interactive Dashboard
+
+### Streamlit Application
+- **Location:** `dashboards/app.py`
+- **Description:** Interactive web application for exploring feedback data with filters and visualizations
+- **Features:**
+  - Multi-dimensional filtering (state, date, channel, department, topic, sentiment)
+  - Real-time KPIs (total messages, negative %, unresolved %, avg response time)
+  - Interactive Plotly charts
+  - Data export (download filtered data as CSV)
+
+**To Launch:**
+```bash
+streamlit run dashboards/app.py
+```
+Access at `http://localhost:8501`
+
+---
+
+## Configuration
+
+### Analysis Configuration
+- **Location:** `config/analysis_config.yml`
+- **Description:** Pipeline parameters including random seed, topic count, and TF-IDF settings
+- **Parameters:**
+  - random_seed: 42 (reproducibility)
+  - n_topics: 10 (default topic count)
+  - min_df: 5 (minimum document frequency)
+  - max_df: 0.95 (maximum document frequency)
+  - n_features_tfidf: 20000 (TF-IDF feature limit)
+
+---
+
+## Testing
+
+### Unit Tests
+- **Location:** `tests/`
+- **Files:**
+  - `test_cleaning.py` - Text cleaning and PII masking tests
+  - `test_sentiment.py` - Sentiment analysis accuracy tests
+  - `test_topic_modeling.py` - Topic model validity tests
+
+**To Run:**
+```bash
+pytest tests/ -v
+pytest tests/ --cov=src --cov-report=html
+```
+
+---
+
+## Dependencies
+
+### Requirements File
+- **Location:** `requirements.txt`
+- **Description:** Python package dependencies with version specifications
+- **Key Packages:**
+  - pandas (data manipulation)
+  - scikit-learn (machine learning)
+  - nltk (natural language processing)
+  - gensim (topic modeling)
+  - matplotlib, seaborn, plotly (visualization)
+  - streamlit (dashboard)
+
+**To Install:**
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Repository Information
+
+- **Repository:** tiwa-codes/citizen-feedback-text-analysis
+- **Branch:** reporting/citizen-feedback-report
+- **README:** `README.md` (comprehensive user guide)
+- **Project Summary:** `PROJECT_SUMMARY.md` (completion status and statistics)
+- **License:** MIT License
+
+---
+
+## Contact & Support
+
+For questions about data sources, methodology, or technical implementation:
+1. Review `README.md` for setup and usage instructions
+2. Check `docs/` folder for detailed documentation
+3. Run tests to verify pipeline: `pytest tests/ -v`
+4. Consult `notebooks/01_citizen_feedback_eda.ipynb` for analysis examples
+5. Open GitHub issues for bug reports or feature requests
+
+---
+
+**Document Version:** 1.0  
+**Last Updated:** November 2025  
+**Maintained By:** Public Services Analytics Team
